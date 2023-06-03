@@ -5,6 +5,47 @@ body{
     font-family: cursive;
     height: 2690px;
 }
+/*MENU*/
+header{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 90px;
+    width: 100%;
+    }
+    
+    .menu nav{   
+   list-style: none;
+   display: flex;
+   }
+
+   
+/*Logo*/  
+   .menu .img1{
+    width: 60px;
+    height: 60px;
+    margin-right: 1500px;
+    margin-top: 15px;
+}
+
+   header .menu{
+   font-size: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 0px 20px;
+}   
+
+/*Links dentro del menu*/
+header .info {
+   padding: 12px 20px ;
+   text-decoration: none;
+   font-weight: bold;
+   color: #ffffff;
+   margin-top: -45px;
+   }
+   
+   header .info:hover{
+   color: #ffd446;
+   }
 
 main .contenido{
     display: flex;

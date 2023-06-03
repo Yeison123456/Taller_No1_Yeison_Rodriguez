@@ -76,6 +76,10 @@ section{
    color: rgb(251, 255, 17);
 }
 
+.body .titulo1{
+   margin: 50% 50%;
+}
+
 .body .form form{
    padding: 40px 80px;
    font-size: 20px;
