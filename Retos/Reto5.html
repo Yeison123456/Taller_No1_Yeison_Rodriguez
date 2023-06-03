@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reto1.css">
+    <title>Consulta</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <img class="img1" src="JavaScript-logo.png" alt="">
+            <nav>
+                <a href="Reto1.html" class="info">Reto 1</a>
+                <a href="Reto2.html" class="info">Reto 2</a>
+                <a href="Reto3.html" class="info">Reto 3</a>
+                <a href="Reto4.html" class="info">Reto 4</a>
+                <a href="Reto5.html" class="info">Reto 5</a>
+                <a href="Reto6.html" class="info">Reto 6</a>
+                <a href="Reto7.html" class="info">Reto 7</a>
+
+            </nav>
+        </div>
+        
+    </header>
+
+    <div class="body">
+        <section id="Palabra">
+            <div class="form">
+                <div class="titulo">
+                    <h1>
+                    Consulta el instructor
+                    </h1>
+                </div>
+                <form>
+            
+                    <div class="seccion1">
+                    <label for="">Nombre</label><br>
+                        <select name="op3" id="op1">
+                        <option value="1">Lorena</option>
+                        <option value="2">Tatiana</option>
+                        <option value="3">Paula</option>
+                        <option value="4">Margarita</option>
+                        <option value="5">Jennifer</option>
+                        <option value="6">Jonathan</option>
+                        <option value="7">Uldarico</option>
+                    </select><br>
+                    <label for="">Apellido</label><br>
+                    <select name="op2" id="op2">
+                        <option value="1">Medina</option>
+                        <option value="2">Cabrera</option>
+                        <option value="3">Romero</option>
+                        <option value="4">Guarin</option>
+                        <option value="5">Fajardo</option>
+                        <option value="6">Espitia</option>
+                        <option value="7">Andrade</option>
+                    </select><br>
+                    <label for="">Asignatura</label><br>
+                    <select name="op3" id="op3">
+                        <option value="1">Comunicacion</option>
+                        <option value="2">Java Avanzado</option>
+                        <option value="3">Emprendimiento</option>
+                        <option value="4">Prototipado</option>
+                        <option value="5">JavaScript</option>
+                        <option value="6">Base de datos</option>
+                        <option value="7">Python basico</option>
+                    </select>
+                </div>
+                    
+                    <div class="seccion1">
+                    <button id="btnConsultar" onclick="consultar(event)">Consultar</button>
+                </form>
+                    <div class="resultado">
+                
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <Script type="text/JavaScript" src="../js/instructor.js"></Script>
+</body>
+</html>

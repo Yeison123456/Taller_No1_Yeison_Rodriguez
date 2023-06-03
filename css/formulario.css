@@ -1,0 +1,18 @@
+.succes{
+    border: 2px solid rgb(42, 230, 42);
+}
+
+.error{
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.feedback{
+    max-width: 100%;
+    width: 100%;
+    background-color: aquamarine;
+    padding: 5px;
+    color: black;
+    font-size: 10px;
+    visibility: hidden;
+    opacity: 0;
+}

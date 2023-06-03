@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#Calculadora{
+
+    background-color: antiquewhite;
+    margin-top: 50px;
+    width: 30%;
+    height: 600px;
+}
+
+.form{
+    padding: 60px;
+}
+
+.titulo{
+    font-size: 25px;
+    background-color: aqua;
+}
+
+.form form{
+    padding: 60px 80px;
+    font-size: 20px;
+    background-color: aquamarine;
+}
+
+.form .seccion1{
+    padding: 20px;
+}
+
+.form input{
+    width: 180px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.form select{
+    width: 180px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.form button{
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-left: 30px;
+    background-color: brown;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+

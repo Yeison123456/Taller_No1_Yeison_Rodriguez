@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reto1.css">
+    <title>Consulta</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <img class="img1" src="JavaScript-logo.png" alt="">
+            <nav>
+                <a href="Reto1.html" class="info">Reto 1</a>
+                <a href="Reto2.html" class="info">Reto 2</a>
+                <a href="Reto3.html" class="info">Reto 3</a>
+                <a href="Reto4.html" class="info">Reto 4</a>
+                <a href="Reto5.html" class="info">Reto 5</a>
+                <a href="Reto6.html" class="info">Reto 6</a>
+                <a href="Reto7.html" class="info">Reto 7</a>
+            </nav>
+        </div>
+        
+    </header>
+
+    <div class="body">
+        <section id="Palabra">
+            <div class="form">
+                <div class="titulo">
+                    <h1>
+                    Consulta de palabra
+                    </h1>
+                </div>
+                <form>
+                    <div class="seccion1">
+                    <label for="tex1"> Ingrese la palabra</label><br>
+                    <input type="text" id="tex1" name="tex1">
+                    </div>
+            
+                    <div class="seccion1">
+                    <label for="op">Operacion</label><br>
+                        <select name="op" id="op">
+                        <option value="1">Longitud</option>
+                        <option value="2">Convertirla en mayusculas</option>
+                        <option value="3">Convertirla en minuscula</option>
+                        <option value="4">Primer caracter</option>
+                    </select>
+                    
+                    </div>
+                    
+                    <div class="seccion1">
+                    <button id="btnOperar" onclick="operar(event)">Operar</button>
+                </form>
+                    <div class="resultado">
+                
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <Script type="text/JavaScript" src="../js/Reto1.js"></Script>
+</body>
+</html>

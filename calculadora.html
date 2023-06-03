@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reto1.css">
+    <title>Index</title>
+</head>
+<body>
+    <!--MENU-->
+    <header>
+        <div class="menu">
+            <img class="img1" src="JavaScript-logo.png" alt="">
+            <nav>
+                <a href="Reto1.html" class="info">Reto 1</a>
+                <a href="Reto2.html" class="info">Reto 2</a>
+                <a href="Reto3.html" class="info">Reto 3</a>
+                <a href="Reto4.html" class="info">Reto 4</a>
+                <a href="Reto5.html" class="info">Reto 5</a>
+                <a href="Reto6.html" class="info">Reto 6</a>
+            </nav>
+        </div>
+        
+    </header>
+    <!--Cuerpo-->
+    <div class="body">
+        <section id="calculadora">
+          <div class="form">
+            <div class="titulo">
+              <h1>
+                Calculadora
+              </h1>
+            </div>
+            <form>
+              <div class="seccion1">
+                <label for="num1"> Ingrese el numero 1</label><br>
+                <input type="number" id="num1" name="num1">
+              </div>
+      
+              <div class="seccion1">
+                <label for="num2">Ingrese el numero 2 </label><br>
+                <input type="number" id="num2" name="num2">
+              </div>
+      
+              <div class="seccion1">
+                <label for="op">Operacion</label><br>
+                  <select name="op" id="op">
+                  <option value="1">Suma</option>
+                  <option value="2">Resta</option>
+                  <option value="3">Multiplicacion</option>
+                  <option value="4">Division</option>
+                </select>
+                
+              </div>
+              
+              <div class="seccion1">
+                <button id="btnCalcular" onclick="calcular(event)">Calcular</button>
+                </form>
+                <div class="resultado">
+            
+                </div>
+              </div>
+          </div>
+        </div>
+      
+        </section>
+      </div>
+        <script type="text/JavaScript" src="js/Calculadora2.js"></script>
+      </body>
+
+     
+     <footer></footer>
+</body>
+</html>

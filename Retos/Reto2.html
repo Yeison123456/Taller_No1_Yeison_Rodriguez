@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Reto2.css">
+    <title>Eventos</title>
+</head>
+<body onload="cargarBody()">
+    
+    <main>
+        <div class="contenido">
+            <div class="li1"></div>
+            <div class="li2"></div>
+            <div class="li3"></div>
+            <div class="li4"></div>
+            <div class="li5"></div>
+            
+            <p class="des">Descripción</p>
+            <p class="eje">Ejemplo</p>
+            
+            <h1>Eventos en JavaScript</h1>
+
+<!-- Evento onblur -->
+            <p class="te1">El evento <b>onblur</b> ocurre cuando un elemento se sale 
+            de un elemento HTML como puede ser un "input", 
+            "select" y "a". El evento onblur ocurre cuando 
+            un objeto pierde el foco.</p>
+            <div class="li6"></div>
+
+            <label class="ti1">Escribe un texto un texto y veras la magia</label>
+            <input type="text" class="bu1" onblur="cambiarMayuscula(this);">
+
+<!-- Evento onmouseout -->
+            <p class="te2"> El evento <b>onclick</b> ejecuta una cierta funcionalidad cuando
+             se hace clic en un botón. Esto podría ocurrir cuando un usuario envía 
+             un formulario, cuando cambias cierto contenido de la página web y otras
+             cosas por el estilo.</p>
+             <div class="li7"></div>
+ 
+            <h1 id="ti2">Evento onclick</h1>
+            <button id="bu2" onclick="cambiar(evento)">Haz clic y ve mi poder</button>
+            
+<!-- Evento ondblclisk -->
+            <p class="te3">El evento <b>ondblclick</b> se dispara cuando se presiona dos veces
+             seguidas el botón izquierdo del mouse. Para ver el funcionamiento de este
+             evento crearemos un div en una coordenada absoluta y lo ocultaremos al hacer
+             doble clic en su interior.</p>
+            <div class="li8"></div>
+            <div id="recuadro" ondblclick="ocultar(this)"></div>
+            <h1 class="ti3">Doble clic para ocultar este recuadro</h1>
+
+
+<!-- Evento onFocus -->
+            <p class="te4">El evento <b>onFocus</b> se ejecuta cuando un componente de nuestra web 
+            toma el foco.</p>
+            <div class="li9"></div>
+
+            <form class="formu">
+                <input type="text" id="text" value="Nombre" onfocus="vaciar(this)">
+            </form>
+
+<!-- Evento onload -->
+            <p class="te5">El evento <b>onload</b> de Javascript se activa cuando se termina de
+                cargar la página. Cuando necesitamos hacer cosas en el momento en el
+                que la página haya terminado de cargar, podemos asociar un manejador
+                de evento onload en la etiqueta "body" .</p>
+            <div class="li10"></div> 
+
+
+
+<!-- Evento onmousedown -->
+            <p class="te6">El evento <b>onmousedown</b> ocurre cuando un usuario 
+            tiene presionado el mouse sobre un elemento y no lo suelta.</p>
+            <div class="li11"></div> 
+
+            <form class="formu1">
+                    <input type="text" value="Hola" id="Mensaje">
+                    <input id="boton" type="button" value="Presioname" onmousedown="presionar(1);" onmouseup="presionar(2);"></input>
+            </form>
+
+<!-- Evento onMouseOver -->
+            <p class="te7">El evento <b>onMouseOver</b> se ejecuta cuando pasamos la flecha del 
+                mouse sobre un elemento HTML y el evento onMouseOut cuando la flecha 
+                abandona el mismo. Para probar estos eventos implementaremos una página 
+                que cambie el color de fondo del documento.</p>
+                <div class="li12"></div> 
+                
+            <div class="pintar">
+                <a href="" onmouseover="pintar('red')" onmouseout="pintar('black')">Rojo</a>
+                <a href="" onmouseover="pintar('green')" onmouseout="pintar('black')">Verde</a>
+                <a href="" onmouseover="pintar('blue')" onmouseout="pintar('black')">Azul</a>
+                <div id="Cuadrado" style="background-color: black; width: 200px; height: 100px;">
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="contenido2">
+
+            <div class="li1"></div>
+            <div class="li2"></div>
+            <div class="li3"></div>
+            <div class="li4"></div>
+            <div class="li5"></div>
+            
+            <p class="des">Descripción</p>
+            <p class="eje">Ejemplo</p>
+
+
+
+<!-- Evento onmouseout -->
+            <p class="te8">El evento <b>onmouseout</b> ocurre cuando el puntero del mouse
+                 se mueve fuera de un elemento o fuera de uno de sus elementos 
+                 secundarios. Sugerencia: Este evento se usa a menudo junto con 
+                 el evento onmouseover , que ocurre cuando el puntero se mueve a 
+                 un elemento o a uno de sus elementos secundarios.</p>
+                <div class="li13"></div> 
+
+<!-- Evento onsubmit -->            
+            <p class="te9">Este evento <b>onsubmit</b> se encarga de ejecutar un determinado 
+                código de javascript al realizarse el envío de un formulario. 
+                El ejemplo mas claro de utilización de este evento es evitar que 
+                un formulario sea enviado si determinadas condiciones no son cumplidas.</p>
+                <div class="li14"></div> 
+
+                <form class="miForm" name="miForm" onSubmit="form_submit()">
+                    <label >Ingrese su nombre :</label>
+                    <input type="text" id="nombre" value="" required>
+                    <input type="submit" value="Subir">
+                </form>
+
+<!-- Evento onunload -->
+            <p class="te10">El evento <b>onunload</b> se dispara cuando salimos del sitio 
+            y nos dirijimos por medio de un hipervínculo a otro o cerramos la 
+            ventana del navegador. La función ventanaBienvenida() se ejecuta 
+            inmediatamente finaliza la carga de la página en el navegador y
+            la función ventanaDespedida() una vez que cerremos dicha página.</p>
+            <div class="li15"></div> 
+
+                
+        </div>
+
+        
+
+    </main>
+
+
+    <script type="text/JavaScript" src="../js/Reto2.js"></script>
+
+</body>
+</html>

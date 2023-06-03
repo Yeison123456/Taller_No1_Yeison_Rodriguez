@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+body{
+    font-size: 16px;
+}
+
+.contenido button{
+    margin: 500px 68rem;
+    padding: 15px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: blueviolet;
+}
+
+.modal{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: auto;
+    padding-top: 200px;
+    display: none;
+}
+
+.contenidoModal{
+    background-color: white;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    padding: 1rem;
+    animation-name: animarmodal;
+    animation-duration: 0.5s;
+}
+
+@keyframes animarmodal{
+    from {top: -300px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+
+.cerrarModal{
+    font-size: 2rem;
+    float: right;
+}
+
+.cerrarModal:hover{
+    cursor: pointer;
+}
+
+.contenidoModal{
+    display: flex;
+    height: 580px;
+}
+
+.contenidoModal h2{
+    background-color: blueviolet;
+    color: aliceblue;
+    padding: 1rem 0;
+    text-align: center;
+    clear: both;
+    margin-top: 3rem;
+    width: 97%;
+    height: 30px;
+}
+
+.contenidoModal img{
+    width: 400px;
+    height: 400px;
+    margin-left: -77rem;
+    margin-top: 8rem;
+}
+
+.contenidoModal p{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 8rem;
+    padding: 100px 100px;
+    width: 500px;
+    height: 200px;
+}
+
+
+
+
+
+/* body{
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+    margin-top: 20em;
+}
+
+.contenido{
+    width: 900px;
+    height: 400px;
+    background-color: aqua;
+}
+.contenido #contenidoModal{
+    display: flex;
+}
+
+.contenido .contenidoModal #abrirModal{
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 350px;
+} */
+
+
+
+
+

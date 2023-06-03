@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reto6.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <img class="img1" src="JavaScript-logo.png" alt="">
+            <nav>
+                <a href="Reto1.html" class="info">Reto 1</a>
+                <a href="Reto2.html" class="info">Reto 2</a>
+                <a href="Reto3.html" class="info">Reto 3</a>
+                <a href="Reto4.html" class="info">Reto 4</a>
+                <a href="Reto5.html" class="info">Reto 5</a>
+                <a href="Reto6.html" class="info">Reto 6</a>
+                <a href="Reto7.html" class="info">Reto 7</a>
+
+            </nav>
+        </div>
+        
+    </header>
+
+<div class="body">
+
+    <div class="Circulo">
+        <img src="../img/circulo.png" alt="">
+        <div class="botones">
+        <button id="abrirCirculoP">Perímetro</button><br>
+        <button id="abrirCirculoA">Área</button>
+        </div>
+        <div id="circuloModalP" class="circulomodalP">
+            <div class="contenidoCirculoP">
+                <span class="cerrarCirculoP"><button>Cerrar</button></span>
+                <h2>Perimetro</h2>
+                <label>Digite el diametro del circulo</label>
+                <input type="number" id="diC" name="diC">
+                <button id="btnCalcularPerimetroCir" onclick="calcular(evento)">Calcular</button>
+                <div class="resultadoPC"></div>
+            </div>
+        </div>
+        <div id="circuloModalA" class="circulomodalA">
+            <div class="contenidoCirculoA">
+                <span class="cerrarCirculoA"><button>Cerrar</button></span>
+                <h2>Área</h2>
+                <label>Digite el radio del circulo</label>
+                <input type="number" id="raC" name="raC">
+                <button id="btnCalcularAreaCir" onclick="calcularA(evento)">Calcular</button>
+                <div class="resultadoAC">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Triangulo">
+        <img src="../img/triangulo.png" alt="">
+        <div class="botones">
+        <button id="abrirTrianP">Perímetro</button><br> 
+        <button id="abrirTrianA">Área</button>
+        </div>
+        <div id="trianModalP" class="trianmodalP">
+            <div class="contenidoTrianP">
+                <span class="cerrarTrianP"><button>Cerrar</button></span>
+                <h2>Perimetro</h2>
+                <div class="input">
+                <label>Digite el primer lado del triangulo</label><br>
+                <input type="number" id="lad1T" name="lad1T"><br>
+                <label>Digite el segundo lado del triangulo</label><br>
+                <input type="number" id="lad2T" name="lad2T"><br>
+                <label>Digite el tercer lado del triangulo</label><br>
+                <input type="number" id="lad3T" name="lad3T"><br>
+                </div>
+                <button id="btnCalcularPerimetrotri" onclick="calcularPT(evento)">Calcular</button>
+                <div class="resultadoPT">
+
+                </div>
+            </div>
+        </div>
+        <div id="trianModalA" class="trianModalA">
+            <div class="contenidoTrianA">
+                <span class="cerrarTrianA"><button>Cerrar</button></span>
+                <h2>Área</h2>
+                <div class="input">
+                <label>Digite la base del triangulo</label><br>
+                <input type="number" id="baT" name="baT"><br>
+                <label>Digite la altura del triangulo</label><br>
+                <input type="number" id="alT" name="alT"><br>
+                </div>
+                <button id="btnCalcularAreaTri" onclick="calcularAT(evento)">Calcular</button>
+                <div class="resultadoAT">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Cuadrado">
+        <img src="../img/cuadrado.png" alt="">
+        <div class="botones">
+        <button id="abrirCuadraP">Perímetro</button><br>
+        <button id="abrirCuadraA">Área</button>
+        </div>
+        <div id="cuadraModalP" class="cuadramodalP">
+            <div class="contenidoCuadraP">
+                <span class="cerrarCuadraP"><button>Cerrar</button></span>
+                <h2>Perimetro</h2>
+                <div class="input">
+                <label>Digite algun lado del cuadrado</label><br>
+                <input type="number" id="lad1C" name="lad1C"><br>
+                </div>
+                <button id="btnCalcularPerimetroCuadra" onclick="calcularPC(evento)">Calcular</button>
+                <div class="resultadoCP">
+
+                </div>
+            </div>
+        </div>
+        <div id="cuadraModalA" class="cuadraModalA">
+            <div class="contenidoCuadraA">
+                <span class="cerrarCuadraA"><button>Cerrar</button></span>
+                <h2>Área</h2>
+                <div class="input">
+                <label>Digite algun lado del cuadrado</label><br>
+                <input type="number" id="lad2C" name="lad2C"><br>
+                </div>
+                <button id="btnCalcularAreaCuadra" onclick="calcularCAC(evento)">Calcular</button>
+                <div class="resultadoCA">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Rectangulo">
+        <img src="../img/rectangulo.png" alt="">
+        <div class="botones">
+        <button id="abrirRectaP">Perímetro</button><br>
+        <button id="abrirRectaA">Área</button>
+        </div>
+        <div id="rectaModalP" class="rectamodalP">
+            <div class="contenidoRectaP">
+                <span class="cerrarRectaP"><button>Cerrar</button></span>
+                <h2>Perimetro</h2>
+                <div class="input">
+                <label>Digite el primer lado del rectangulo</label><br>
+                <input type="number" id="lad1Re" name="lad1Re"><br>
+                <label>Digite el segundo lado del rectangulo</label><br>
+                <input type="number" id="lad2Re" name="lad2Re"><br>
+                <label>Digite el tercer lado del rectangulo</label><br>
+                <input type="number" id="lad3Re" name="lad3Re"><br>
+                <label>Digite el cuarto lado del rectangulo</label><br>
+                <input type="number" id="lad4Re" name="lad4Re"><br>
+                </div>
+                <button id="btnCalcularPerimetroRecta" onclick="calcularRP(evento)">Calcular</button>
+                <div class="resultadoRP">
+
+                </div>
+            </div>
+        </div>
+        <div id="rectaModalA" class="rectaModalA">
+            <div class="contenidoRectaA">
+                <span class="cerrarRectaA"><button>Cerrar</button></span>
+                <h2>Área</h2>
+                <div class="input">
+                <label>Digite el largo del rectangulo</label><br>
+                <input type="number" id="larRe" name="larRe"><br>
+                <label>Digite el ancho del rectangulo</label><br>
+                <input type="number" id="anRe" name="anRe"><br>
+                </div>
+                <button id="btnCalcularAreaRecta" onclick="calcularRA(evento)">Calcular</button>
+                <div class="resultadoRA">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<script type="text/JavaScript" src="../js/RetoModales.js"></script>
+</body>
+</html>

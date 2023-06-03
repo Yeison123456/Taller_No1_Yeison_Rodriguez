@@ -1,0 +1,440 @@
+body{
+    background-color: #262626;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    height: 2690px;
+}
+
+main .contenido{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin-top: 50px;
+    margin-left:25%;
+    width: 1100px;
+    height: 1320px;
+}
+
+.contenido h1{
+    width: 500px;
+    height: 50px;
+    margin-left: -575px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.contenido .li1{
+    background-color: black;
+    margin-top: 110px;
+    margin-left: 50px;
+    width: 90%;
+    height: 1px;
+}
+
+.contenido .li2{
+    background-color: black;
+    margin-top: 170px;
+    margin-left: -990px;
+    width: 90%;
+    height: 1px;
+}
+
+.contenido .li3{
+    background-color: black;
+    margin-top: 110px;
+    margin-left: -990px;
+    width: 1px;
+    height: 89%;
+}
+
+.contenido .li4{
+    background-color: black;
+    margin-top: 110px;
+    margin-left: 500px;
+    width: 1px;
+    height: 89%;
+}
+
+.contenido .li5{
+    background-color: black;
+    margin-top: 110px;
+    margin-left: 488px;
+    width: 1px;
+    height: 89%;
+}
+
+.contenido .des{
+    width: 200px;
+    height: 40px;
+    margin-left: -850px;
+    margin-top: 115px;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.contenido .eje{
+    width: 200px;
+    height: 40px;
+    margin-left: 300px;
+    margin-top: 115px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.contenido .te1{
+    width: 465px;
+    height: 110px;
+    margin-top: 190px;
+    margin-left: -750px;
+    font-size: 18px;
+}
+
+.contenido .li6{
+    background-color: black;
+    margin-top: 320px;
+    margin-left: -481px;
+    width: 90%;
+    height: 1px;
+}
+
+.contenido .ti1{
+    width: 300px;
+    height: 55px;
+    margin-top: 185px;
+    margin-left: -400px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contenido .bu1{
+    width: 200px;
+    height: 30px;
+    margin-top: 250px;
+    margin-left: -250px;
+}
+
+
+
+.contenido .te2{
+    width: 465px;
+    height: 135px;
+    margin-top: 340px;
+    margin-left: -827px;
+    font-size: 18px;
+}
+
+.contenido .li7{
+    background-color: black;
+    margin-top: 495px;
+    margin-left: -483px;
+    width: 90%;
+    height: 1px;
+}
+
+.contenido #ti2{
+    width: 300px;
+    margin-top: 350px;
+    margin-left: -400px;
+}
+
+.contenido #bu2{
+    background-color: aquamarine;
+    height: 40px;
+    margin-top: 420px;
+    margin-left: -220px;
+    border-radius: 5px;
+}
+
+.contenido .te3{
+    width: 465px;
+    height: 135px;
+    margin-top: 515px;
+    margin-left: -800px;
+    font-size: 18px;
+}
+
+.contenido .li8{
+    background-color: black;
+    margin-top: 670px;
+    margin-left: -481px;
+    width: 90%;
+    height: 1px;
+}
+
+#recuadro {
+    color:rgb(230, 230, 157);
+    background-color:rgb(27, 27, 24);
+    position:absolute;
+    text-align:center;
+    left: 74pc;
+    top:640px;
+    width:400px;
+    height:70px;
+  }
+
+.contenido .ti3{
+    margin-top: 510px;
+    margin-left: -443px;
+    font-size: 30px;
+    height: 80px;
+    width: 400px;
+    
+}
+.contenido .te4{
+    width: 465px;
+    height: 60px;
+    margin-top: 690px;
+    margin-left: -922px;
+    font-size: 18px;
+}
+
+.contenido .li9{
+    background-color: black;
+    margin-top: 770px;
+    margin-left: -488px;
+    width: 90%;
+    height: 1px;
+}
+
+.contenido .formu{
+    margin-top: 700px;
+    margin-left: -350px;
+    height: 30px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.contenido .te5{
+    width: 465px;
+    height: 135px;
+    margin-top: 790px;
+    margin-left: -820px;
+    font-size: 18px;
+}
+
+.contenido .li10{
+    background-color: black;
+    margin-top: 940px;
+    margin-left: -482px;
+    width: 90%;
+    height: 1px;
+}
+
+.contenido .te6{
+    width: 465px;
+    height: 90px;
+    margin-top: 960px;
+    margin-left: -972px;
+    font-size: 18px;
+}
+
+.contenido .li11{
+    background-color: black;
+    margin-top: 1065px;
+    margin-left: -484px;
+    width: 90%;
+    height: 1px;
+}
+
+.contenido .formu1{
+    height: 80px;
+    width: 200px;
+    margin-top: 960px;
+    margin-left: -350px;
+
+}
+
+.contenido .formu1 #Mensaje{
+    border-radius: 5px;
+    width: 180px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contenido .formu1 #boton{
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+
+
+.contenido .te7{
+    width: 465px;
+    height: 185px;
+    margin-top: 1085px;
+    margin-left: -825px;
+    font-size: 18px;
+}
+
+.contenido .li12{
+    background-color: black;
+    margin-top: 1285px;
+    margin-left: -484px;
+    width: 90%;
+    height: 1px;
+}
+
+.contenido .pintar{
+    width: 200px;
+    height: 150px;
+    margin-top: 1100px;
+    margin-left: -350px;
+}
+
+.contenido .pintar a{
+    margin-left: 20px;
+    font-weight: bold;
+}
+.contenido .pintar #Cuadrado{
+    margin-top: 20px;
+}
+
+
+main .contenido2{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin-top: 30px;
+    margin-left: 25%;
+    width: 1100px;
+    height: 1305px;
+}
+
+.contenido2 .li1{
+    background-color: black;
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 90%;
+    height: 1px;
+}
+
+.contenido2 .li2{
+    background-color: black;
+    margin-top: 100px;
+    margin-left: -990px;
+    width: 90%;
+    height: 1px;
+}
+
+.contenido2 .li3{
+    background-color: black;
+    margin-top: 40px;
+    margin-left: -990px;
+    width: 1px;
+    height: 616px;
+}
+
+.contenido2 .li4{
+    background-color: black;
+    margin-top: 40px;
+    margin-left: 500px;
+    width: 1px;
+    height: 616px;
+}
+
+.contenido2 .li5{
+    background-color: black;
+    margin-top: 40px;
+    margin-left: 488px;
+    width: 1px;
+    height: 616px;
+}
+
+.contenido2 .des{
+    width: 200px;
+    height: 40px;
+    margin-left: -850px;
+    margin-top: 45px;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.contenido2 .eje{
+    width: 200px;
+    height: 40px;
+    margin-left: 300px;
+    margin-top: 45px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.contenido2 .te8{
+    width: 465px;
+    height: 160px;
+    margin-top: 120px;
+    margin-left: -820px;
+    font-size: 18px;
+}
+
+.contenido2 .li13{
+    background-color: black;
+    margin-top: 295px;
+    margin-left: -485px;
+    width: 90%;
+    height: 1px;
+}
+
+.contenido2 .te9{
+    width: 465px;
+    height: 140px;
+    margin-top: 310px;
+    margin-left: -970px;
+    font-size: 18px;
+}
+
+.contenido2 .li14{
+    background-color: black;
+    margin-top: 465px;
+    margin-left: -485px;
+    width: 90%;
+    height: 1px;
+}
+
+.contenido2 .miForm{
+    width: 200px;
+    height: 70px;
+    margin-top: 330px;
+    margin-left: -340px;
+}
+
+.contenido2 .miForm label{
+    font-size: 20px;
+}
+
+.contenido2 .miForm input{
+    font-size: 17px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.contenido2 .te10{
+    width: 465px;
+    height: 160px;
+    margin-top: 480px;
+    margin-left: -830px;
+    font-size: 18px;
+}
+
+.contenido2 .li15{
+    background-color: black;
+    margin-top: 655px;
+    margin-left: -485px;
+    width: 90%;
+    height: 1px;
+}
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reto7.css">
+    <title>Index</title>
+</head>
+<body>
+    <!--MENU-->
+    <header>
+        <div class="menu">
+            <img class="img1" src="JavaScript-logo.png" alt="">
+            <nav>
+                <a href="Reto1.html" class="info">Reto 1</a>
+                <a href="Reto2.html" class="info">Reto 2</a>
+                <a href="Reto3.html" class="info">Reto 3</a>
+                <a href="Reto4.html" class="info">Reto 4</a>
+                <a href="Reto5.html" class="info">Reto 5</a>
+                <a href="Reto6.html" class="info">Reto 6</a>
+                <a href="Reto7.html" class="info">Reto 7</a>
+            </nav>
+        </div>
+        
+    </header>
+    <!--Cuerpo-->
+    <div class="body">
+        <section id="Contenido">
+            <div class="form">
+                <div class="titulo">
+                    <h1>
+                        Registro de Usuario
+                    </h1>
+                </div>
+            <form class="formulario" id="formulario">
+                <select id="tipDoc" name="tipDoc">
+                    <option value="0">Tipo de documento</option>
+                    <option value="1">Cedula de ciudadania</option>
+                    <option value="2">Tarjeta de identidad</option>
+                    <option value="3">Pasaporte</option>
+                </select>
+
+                <div class="caNoDoc">
+                    <input type="number" id="noDoc" name="noDoc" placeholder="No. de Documento">
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="caNom">
+                    <input type="text" id="nombre" name="nombre" placeholder="Digite su Nombre"> 
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="caApe">      
+                    <input type="text" id="apellido" name="apellido" placeholder="Digite su Apellido">
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="caFecha">
+                    <input type="date" id="date" name="date" placeholder="Fecha de nacimineto">
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="caCo">
+                    <input type="text" id="correo" name="correo" placeholder="Correo Electronico">
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="caCon">
+                    <input type="password" id="password" name="password" placeholder="Digite una Contraseña">
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="caCon2">
+                    <input type="password" id="password2" name="password2" placeholder="Digite de nuevo la Contraseña">
+                    <div class="feedback"></div>
+                </div>
+
+                <div class="caTer">
+                    <div class="terminos">
+                        <input type="checkbox" value="acepto" id="terminos" name="terminos">
+                        <button id="abrirTerminos" type="button">Terminos y condiciones</button>
+                    </div>
+                    <div class="feedback"></div>
+                </div>
+
+                <div id="terminosModal" class="terminomodal">
+                    <div class="contenido">
+                        <h2>Terminos y condiciones</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Eligendi eveniet possimus esse corporis cum, laboriosam 
+                            eaque! Temporibus, id, nam dolores iste delectus eum 
+                            reprehenderit sint nesciunt eligendi minus nulla itaque?</p>
+                            <span class="cerrar"><button type="button">Cerrar</button></span>
+                    </div>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+            </div>
+            
+        </section>
+    </div>
+
+
+        <script type="text/JavaScript" src="../js/Reto7.js"></script>
+      </body>
+
+     
+     <footer></footer>
+</body>
+</html>

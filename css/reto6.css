@@ -1,0 +1,933 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+body{
+   width: 100%;   
+   background-color: rgb(37, 37, 36);
+}
+/*MENU*/
+header{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 90px;
+    width: 100%;
+    }
+    
+    .menu nav{   
+   list-style: none;
+   display: flex;
+   }
+
+   
+/*Logo*/  
+   .menu .img1{
+    width: 60px;
+    height: 60px;
+    margin-right: 1500px;
+    margin-top: 15px;
+}
+
+   header .menu{
+   font-size: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 0px 20px;
+}   
+
+/*Links dentro del menu*/
+header .info {
+   padding: 12px 20px ;
+   text-decoration: none;
+   font-weight: bold;
+   color: #ffffff;
+   margin-top: -45px;
+   }
+   
+   header .info:hover{
+   color: #ffd446;
+   }
+
+/*Contenido*/
+
+.body{
+    display: flex;
+    font-size: 16px;
+}
+
+/*Circulo*/
+
+.Circulo{
+    width: 400px;
+    height: 540px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.5);
+    margin-top: 100px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    margin-left: 90px;
+}
+
+
+.Circulo img{
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 45px;
+}
+
+
+.Circulo button{
+    padding: 10px 25px;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ffd446;
+    border-radius: 5px;
+}
+
+.Circulo .botones{
+    margin-top: 25px;
+}
+
+/*Perimetro del Circulo*/
+.Circulo .circulomodalP{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: auto;
+    padding-top: 200px;
+    margin-left: -90px;
+
+    display: none;
+}
+
+.Circulo .contenidoCirculoP{
+    background-color: rgb(0, 0, 0);
+    width: 27%;
+    margin: auto;
+    position: relative;
+    padding: 1rem;
+    animation-name: animarCirP;
+    animation-duration: 0.5s;
+    display: flex;
+    height: 500px;
+}
+
+@keyframes animarCirP{
+    from {top: -300px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+
+/*Contenido del perimetro en circulo*/
+
+.Circulo .contenidoCirculoP{
+    display: flex;
+    height: 580px;
+}
+
+.Circulo .contenidoCirculoP button{
+    margin-top: 19px;
+    margin-left: 300px;
+    border-radius: 5px;
+}
+
+.Circulo .contenidoCirculoP h2{
+    margin-top: 30px;
+    margin-left: -320px;
+    color: #ffd446;
+    font-size: 30px;
+}
+
+.Circulo .contenidoCirculoP label{
+    margin-top: 130px;
+    margin-left: -135px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.Circulo .contenidoCirculoP input{
+    margin-top: 170px;
+    margin-left: -285px;
+    font-size: 20px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.Circulo .contenidoCirculoP #btnCalcularPerimetroCir{
+    height: 60px;
+    margin-top: 250px;
+    margin-left: -220px;
+}
+
+.Circulo .contenidoCirculoP .resultadoPC{
+    color: rgb(238, 232, 232);
+    width: 300px;
+    height: 100px;
+    margin-top: 380px;
+    margin-left: -210px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cerrarCirculo{
+    font-size: 2rem;
+    float: right;
+}
+
+.cerrarCirculo:hover{
+    cursor: pointer;
+}
+
+
+/*Area del Circulo*/
+
+.Circulo .circulomodalA{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: auto;
+    padding-top: 200px;
+    margin-left: -90px;
+    display: none;
+}
+
+.Circulo .contenidoCirculoA{
+    background-color: rgb(0, 0, 0);
+    width: 27%;
+    margin: auto;
+    position: relative;
+    padding: 1rem;
+    animation-name: animarCirP;
+    animation-duration: 0.5s;
+}
+
+/*Contenido del area en perimetro*/
+
+.Circulo .contenidoCirculoA{
+    display: flex;
+    height: 580px;
+}
+
+.Circulo .contenidoCirculoA button{
+    margin-top: 19px;
+    margin-left: 300px;
+    border-radius: 5px;
+}
+
+.Circulo .contenidoCirculoA h2{
+    margin-top: 30px;
+    margin-left: -320px;
+    color: #ffd446;
+    font-size: 30px;
+}
+
+.Circulo .contenidoCirculoA label{
+    margin-top: 130px;
+    margin-left: -55px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.Circulo .contenidoCirculoA input{
+    margin-top: 170px;
+    margin-left: -260px;
+    font-size: 20px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.Circulo .contenidoCirculoA #btnCalcularAreaCir{
+    height: 60px;
+    margin-top: 270px;
+    margin-left: -220px;
+}
+
+.Circulo .contenidoCirculoA .resultadoAC{
+    width: 300px;
+    height: 100px;
+    margin-top: 380px;
+    margin-left: -210px;
+    font-size: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+/*Triangulo*/
+
+.Triangulo{
+    width: 400px;
+    height: 540px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.5);
+    margin-top: 100px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+
+.Triangulo img{
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 45px;
+}
+
+
+.Triangulo button{
+    padding: 10px 25px;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #ffd446;
+}
+
+.Triangulo .botones{
+    margin-top: 25px;
+}
+
+
+/*Perimetro del triangulo*/
+
+.Triangulo .trianmodalP{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: auto;
+    padding-top: 200px;
+    margin-left: -530px;
+    display: none;
+}
+
+.Triangulo .contenidoTrianP{
+    background-color: rgb(0, 0, 0);
+    width: 26%;
+    margin: auto;
+    position: relative;
+    padding: 1rem;
+    animation-name: animarTriP;
+    animation-duration: 0.5s;
+}
+
+@keyframes animarTriP{
+    from {top: -300px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+
+
+.Triangulo .contenidoTrianP{
+    display: flex;
+    height: 580px;
+}
+
+.Triangulo .contenidoTrianP button{
+    margin-top: 19px;
+    margin-left: 300px;
+    border-radius: 5px;
+}
+
+.Triangulo .contenidoTrianP h2{
+    margin-top: 30px;
+    margin-left: -320px;
+    color: #ffd446;
+    font-size: 30px;
+}
+
+.Triangulo .contenidoTrianP label{
+    margin-left: -55px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.Triangulo .contenidoTrianP .input{
+    margin-top: 120px;
+    margin-left: -120px;
+    font-size: 20px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.Triangulo .contenidoTrianP .input input{
+    margin: 15px 0px;
+    height: 25px;
+}
+
+
+.Triangulo .contenidoTrianP #btnCalcularPerimetrotri{
+    height: 60px;
+    margin-top: 390px;
+    margin-left: -235px;
+}
+
+.Triangulo .contenidoTrianP .resultadoPT{
+    width: 300px;
+    height: 100px;
+    margin-top: 470px;
+    margin-left: -210px;
+    font-size: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.cerrarTrian{
+    font-size: 2rem;
+    float: right;
+}
+
+.cerrarTrian:hover{
+    cursor: pointer;
+}
+
+
+/*Area del triangulo*/ 
+
+.Triangulo .trianModalA{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: auto;
+    padding-top: 200px;
+    margin-left: -530px;
+    display: none;
+}
+
+.Triangulo .contenidoTrianA{
+    background-color: rgb(0, 0, 0);
+    width: 26%;
+    margin: auto;
+    position: relative;
+    padding: 1rem;
+    animation-name: animarCirP;
+    animation-duration: 0.5s;
+}
+
+
+.Triangulo .contenidoTrianA{
+    display: flex;
+    height: 580px;
+}
+
+.Triangulo .contenidoTrianA button{
+    margin-top: 19px;
+    margin-left: 300px;
+    border-radius: 5px;
+    background-color: #ffd446;
+}
+
+.Triangulo .contenidoTrianA h2{
+    margin-top: 30px;
+    margin-left: -340px;
+    color: #ffd446;
+    font-size: 30px;
+}
+
+.Triangulo .contenidoTrianA label{
+    margin-left: -1px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.Triangulo .contenidoTrianA .input{
+    margin-top: 120px;
+    margin-left: -50px;
+    font-size: 20px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.Triangulo .contenidoTrianA .input input{
+    margin: 15px 0px;
+    margin-left: 20px;
+    height: 25px;
+}
+
+
+.Triangulo .contenidoTrianA #btnCalcularAreaTri{
+    height: 60px;
+    margin-top: 320px;
+    margin-left: -205px;
+}
+
+.Triangulo .contenidoTrianA .resultadoAT{
+    width: 300px;
+    height: 100px;
+    margin-top: 440px;
+    margin-left: -210px;
+    font-size: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+
+/*Cuadrado*/
+
+.Cuadrado{
+    width: 400px;
+    height: 540px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.5);
+    margin-top: 100px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+
+.Cuadrado img{
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 45px;
+}
+
+
+.Cuadrado button{
+    padding: 10px 25px;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #ffd446;
+}
+
+.Cuadrado .botones{
+    margin-top: 25px;
+}
+
+/*Perimetro del cuadrado*/
+
+.Cuadrado .cuadramodalP{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: auto;
+    padding-top: 200px;
+    margin-left: -970px;
+    display: none;
+}
+
+.Cuadrado .contenidoCuadraP{
+    background-color: rgb(0, 0, 0);
+    width: 26%;
+    margin: auto;
+    position: relative;
+    padding: 1rem;
+    animation-name: animarCuaP;
+    animation-duration: 0.5s;
+}
+
+@keyframes animarCuaP{
+    from {top: -300px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+.Cuadrado .contenidoCuadraP{
+    display: flex;
+    height: 580px;
+}
+
+.Cuadrado .contenidoCuadraP button{
+    margin-top: 19px;
+    margin-left: 300px;
+    border-radius: 5px;
+    background-color: #ffd446;
+}
+
+.Cuadrado .contenidoCuadraP h2{
+    margin-top: 30px;
+    margin-left: -340px;
+    color: #ffd446;
+    font-size: 30px;
+}
+
+.Cuadrado .contenidoCuadraP label{
+    margin-left: -20px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.Cuadrado .contenidoCuadraP .input{
+    margin-top: 120px;
+    margin-left: -120px;
+    font-size: 20px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.Cuadrado .contenidoCuadraP .input input{
+    margin: 15px 0px;
+    margin-left: 20px;
+    height: 25px;
+}
+
+
+.Cuadrado .contenidoCuadraP #btnCalcularPerimetroCuadra{
+    height: 60px;
+    margin-top: 250px;
+    margin-left: -205px;
+}
+
+.Cuadrado .contenidoCuadraP .resultadoCP{
+    width: 300px;
+    height: 100px;
+    margin-top: 360px;
+    margin-left: -210px;
+    font-size: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+/*Area del cuadrado*/ 
+
+.Cuadrado .cuadraModalA{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: auto;
+    padding-top: 200px;
+    margin-left: -970px;
+    display: none;
+}
+
+.Cuadrado .contenidoCuadraA{
+    background-color: rgb(0, 0, 0);
+    width: 26%;
+    margin: auto;
+    position: relative;
+    padding: 1rem;
+    animation-name: animarCirP;
+    animation-duration: 0.5s;
+}
+
+.Cuadrado .contenidoCuadraA{
+    display: flex;
+    height: 580px;
+}
+
+.Cuadrado .contenidoCuadraA button{
+    margin-top: 19px;
+    margin-left: 300px;
+    border-radius: 5px;
+    background-color: #ffd446;
+}
+
+.Cuadrado .contenidoCuadraA h2{
+    margin-top: 30px;
+    margin-left: -340px;
+    color: #ffd446;
+    font-size: 30px;
+}
+
+.Cuadrado .contenidoCuadraA label{
+    margin-left: -20px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.Cuadrado .contenidoCuadraA .input{
+    margin-top: 120px;
+    margin-left: -50px;
+    font-size: 20px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.Cuadrado .contenidoCuadraA .input input{
+    margin: 15px 0px;
+    margin-left: 20px;
+    height: 25px;
+}
+
+
+.Cuadrado .contenidoCuadraA #btnCalcularAreaCuadra{
+    height: 60px;
+    margin-top: 250px;
+    margin-left: -205px;
+}
+
+.Cuadrado .contenidoCuadraA .resultadoCA{
+    width: 300px;
+    height: 100px;
+    margin-top: 360px;
+    margin-left: -210px;
+    font-size: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+
+/*Rectangulo*/
+
+.Rectangulo{
+    width: 400px;
+    height: 540px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.5);
+    margin-top: 100px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+
+.Rectangulo img{
+    width: 300px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 45px;
+}
+
+
+.Rectangulo button{
+    padding: 10px 25px;
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #ffd446;
+}
+
+.Rectangulo .botones{
+    margin-top: 25px;
+}
+
+
+/*Perimetro del rectangulo*/
+
+.Rectangulo .contenidoRectaP{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: auto;
+    padding-top: 200px;
+    margin-left: -800px;
+    display: none;
+}
+
+.Rectangulo .contenidoRectaP{
+    background-color: white;
+    width: 26%;
+    margin: auto;
+    position: relative;
+    padding: 1rem;
+    animation-name: animarRecP;
+    animation-duration: 0.5s;
+}
+
+@keyframes animarRecP{
+    from {top: -300px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+
+
+.Rectangulo .rectamodalP{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: auto;
+    padding-top: 120px;
+    margin-left: -1320px;
+    display: none;
+}
+
+.Rectangulo .contenidoRectaP{
+    background-color: rgb(0, 0, 0);
+    width: 29%;
+    margin: auto;
+    position: relative;
+    padding: 5rem;
+    animation-name: animarCirP;
+    animation-duration: 0.5s;
+}
+
+.Rectangulo .contenidoRectaP{
+    display: flex;
+    height: 580px;
+}
+
+.Rectangulo .contenidoRectaP button{
+    margin-top: -20px;
+    margin-left: 300px;
+    border-radius: 5px;
+    background-color: #ffd446;
+}
+
+.Rectangulo .contenidoRectaP h2{
+    margin-top: -10px;
+    margin-left: -340px;
+    color: #ffd446;
+    font-size: 30px;
+}
+
+.Rectangulo .contenidoRectaP label{
+    margin-left: -40px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.Rectangulo .contenidoRectaP .input{
+    margin-top: 70px;
+    margin-left: -100px;
+    font-size: 20px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.Rectangulo .contenidoRectaP .input input{
+    margin: 15px 0px;
+    margin-left: 20px;
+    height: 25px;
+}
+
+
+.Rectangulo .contenidoRectaP #btnCalcularPerimetroRecta{
+    height: 60px;
+    margin-top: 430px;
+    margin-left: -245px;
+}
+
+.Rectangulo .contenidoRectaP .resultadoRP{
+    width: 300px;
+    height: 70px;
+    margin-top: 510px;
+    margin-left: -210px;
+    font-size: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+
+/*Area del rectangulo*/ 
+
+.Rectangulo .contenidoRectaA{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: auto;
+    padding-top: 200px;
+    margin-left: -800px;
+    display: none;
+}
+
+.Rectangulo .contenidoRectaA{
+    background-color: white;
+    width: 26%;
+    margin: auto;
+    position: relative;
+    padding: 1rem;
+    animation-name: animarRecP;
+    animation-duration: 0.5s;
+}
+
+@keyframes animarRecP{
+    from {top: -300px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+
+
+.Rectangulo .rectaModalA{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: auto;
+    padding-top: 120px;
+    margin-left: -1320px;
+    display: none;
+}
+
+.Rectangulo .contenidoRectaA{
+    background-color: rgb(0, 0, 0);
+    width: 29%;
+    margin: auto;
+    position: relative;
+    padding: 1rem;
+    animation-name: animarCirP;
+    animation-duration: 0.5s;
+}
+
+.Rectangulo .contenidoRectaA{
+    display: flex;
+    height: 580px;
+}
+
+.Rectangulo .contenidoRectaA button{
+    margin-top: 19px;
+    margin-left: 300px;
+    border-radius: 5px;
+    background-color: #ffd446;
+}
+
+.Rectangulo .contenidoRectaA h2{
+    margin-top: 30px;
+    margin-left: -340px;
+    color: #ffd446;
+    font-size: 30px;
+}
+
+.Rectangulo .contenidoRectaA label{
+    margin-left: -20px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.Rectangulo .contenidoRectaA .input{
+    margin-top: 120px;
+    margin-left: -20px;
+    font-size: 20px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.Rectangulo .contenidoRectaA .input input{
+    margin: 15px 0px;
+    margin-left: 20px;
+    height: 25px;
+}
+
+
+.Rectangulo .contenidoRectaA #btnCalcularAreaRecta{
+    height: 60px;
+    margin-top: 330px;
+    margin-left: -200px;
+}
+
+.Rectangulo .contenidoRectaA .resultadoRA{
+    width: 300px;
+    height: 70px;
+    margin-top: 430px;
+    margin-left: -210px;
+    font-size: 20px;
+    text-align: center;
+    color: aliceblue;
+ }

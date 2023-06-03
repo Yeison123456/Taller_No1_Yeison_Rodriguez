@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form class="caja" id="validacion" novalidate>
+
+        <h1>Formulario de registro</h1>
+
+        <label>Tipo de Documento</label>
+        <select id="tipDoc">
+            <option value="0">Seleccionar tipo de documento</option>
+            <option value="1">Cedula de ciudadania</option>
+            <option value="2">Tarjeta de identidad</option>
+            <option value="3">Pasaporte</option>
+        </select>
+
+        <div class="caNoDoc">
+            <label>No. Documento</label>
+            <input type="number" name="noDoc" id="noDoc" class="">
+            <div class="feedback"></div>
+        </div>
+        <div class="caNom">
+            <label>Nombre</label>
+            <input type="text" name="noNom" id="noNom" class="">
+            <div class="feedback"></div>
+        </div>
+        <div class="caApe">
+            <label>Apellido</label>
+            <input type="text" name="noApe" id="noApe" class="">
+            <div class="feedback"></div>
+        </div>  
+        <div class="caCo">
+            <label>Correo</label>
+            <input type="email" name="noCo" id="noCo" class="">
+            <div class="feedback"></div>
+        </div>
+        <div class="caNum">
+            <label>No Celular</label>
+            <input type="number" name="noNum" id="noNum" class="">
+            <div class="feedback"></div>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <Script type="text/JavaScript" src="js/formulario.js"></Script>
+
+</body>
+</html>
